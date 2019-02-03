@@ -1,0 +1,93 @@
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#headimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body{
+    background-color: chocolate;
+    background-image: url("back.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 800px;
+}
+
+h1{
+    text-align: center;
+    background-color: crimson;
+}
+div{
+    border-radius: 25px;
+    opacity: .95;
+    margin: auto;
+    border: 10px solid black;
+    padding: 25px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h2 button{
+    width: 10%;
+    height: 10%;
+    background-color: lawngreen;
+    border: none;
+}
+
+.row{
+    background-color: none;
+    border: none;
+   display: table;
+    width: 75%;
+}
+
+.column{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 22px;
+    display: table-cell;
+    background-color: forestgreen;
+    width: 20%
+    text-align: left;
+    
+}
+
+input[type=text] {
+    padding: 3px;
+  background-color: black;
+    border: black;
+  color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#submitbutton{
+    border: 10px solid black;
+    width: 25%;
+    background-color: lawngreen;
+    text-align: center;
+}
+#button1{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: lawngreen;
+    border: none;
+    width: 80%;
+    height: 80%;
+}
+
+iframe{
+    width: 640px;
+    height: 480px;
+}
+

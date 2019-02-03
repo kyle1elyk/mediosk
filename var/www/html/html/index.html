@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mediosk</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <img src="Title.png" id="headimg">
+  </head>  
+
+  <body>
+	<form id="PersonalInfo">
+		<div class = "row">
+            <div class = "column">First Name:
+            <input type="text" name="firstname"></div><br>
+
+            <div class = "column">Middle Initial:
+            <input type="text" name="midinitial"></div><br>
+            
+            <div class = "column">Last Name:
+            <input type="text" name="lastname"></div><br>
+
+            
+        </div>
+        <div class = "row">
+            <div class = "column">Date of Birth:
+            <input type="text" name="dob"></div><br>
+            
+            <div class = "column">Gender: <br>
+            <input type="radio" name="gender" value="male"> Male 
+            <input type="radio" name="gender" value="female"> Female <br> 
+            <input type="radio" name="gender" value="other"> Other </div><br>
+
+            <div class = "column">Address:
+            <input type="text" name="address"></div><br>
+            
+            
+        </div>
+        <div class = "row">
+            <div class = "column">Height:
+            <input type="text" name="height"></div><br>
+            
+            
+            <div class = "column">Weight:
+            <input type="text" name="weight"></div><br>
+
+
+            <div class = "column">Group #:
+            <input type="text" name="groupnum"></div><br>
+
+            <div class = "column">Policy #:
+            <input type="text" name="polnum"></div><br>
+
+        </div>
+        <div id= "submitbutton"><input type="submit" value="Submit" id = "button1"></div><br>
+		
+	</form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<form id="MedicalInfo" style="height:0; width:0; overflow:hidden" >
+        <input type="text" name="license_string" id="license_input">
+        <input type="submit" value="Submit" id="license_submit" name="license_submit">
+        <script>
+        document.getElementById("license_input").focus();
+        $(document).ready(function(){
+            $("#license_input").keypress(function (e) {
+				if(e.which == 13) {
+                    e.preventDefault();
+                    window.location = "http://" + window.location.hostname + "/cgi-bin/client1.py?license_input=" + escape($("#license_input").val());
+                    return false;
+                }
+            });
+        });
+        </script>
+	</form>
+  </body>
+
+</html>

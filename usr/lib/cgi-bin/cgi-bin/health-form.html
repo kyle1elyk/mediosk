@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mediosk</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../script.js"></script>
+    <img src="../Title.png" id="headimg">
+  </head>  
+ 
+  <body>
+	<form id="PersonalInfo" action="client2.py" method="get">
+		<div class = "row">
+            <div class = "column">Sneezing: <br>
+            <input type="radio" name="sneezing" value="1"> Mild <br> 
+            <input type="radio" name="sneezing" value="2"> Severe <br> 
+            <input type="radio" name="sneezing" value="0"> None </div><br>
+
+            <div class = "column">Coughing: <br>
+            <input type="radio" name="coughing" value="1"> Mild <br> 
+            <input type="radio" name="coughing" value="2"> Severe <br> 
+            <input type="radio" name="coughing" value="0"> None </div><br>
+
+            <div class = "column">Nausea: <br>
+            <input type="radio" name="nausea" value="1"> Mild <br> 
+            <input type="radio" name="nausea" value="2"> Severe <br> 
+            <input type="radio" name="nausea" value="0"> None </div><br>
+        </div>
+        <div class = "row">
+            <div class = "column">Vomiting: <br>
+            <input type="radio" name="vomiting" value="1"> Mild <br> 
+            <input type="radio" name="vomiting" value="2"> Severe <br> 
+            <input type="radio" name="vomiting" value="0"> None </div><br>
+            
+            <div class = "column">Fever: <br>
+            <input type="radio" name="fever" value="1"> Mild <br> 
+            <input type="radio" name="fever" value="2"> Severe <br> 
+            <input type="radio" name="fever" value="0"> None </div><br>
+
+            <div class = "column">Shortness of breath: <br>
+            <input type="radio" name="shortnessofbreath" value="1"> Mild <br> 
+            <input type="radio" name="shortnessofbreath" value="2"> Severe <br> 
+            <input type="radio" name="shortnessofbreath" value="0"> None </div><br>
+        </div>
+        <div class = "row">
+            <div class = "column">Shakiness: <br>
+            <input type="radio" name="shakiness" value="1"> Mild <br> 
+            <input type="radio" name="shakiness" value="2"> Severe <br> 
+            <input type="radio" name="shakiness" value="0"> None </div><br>
+            
+            <div class = "column">Fussiness: <br>
+            <input type="radio" name="fussiness" value="1"> Mild <br> 
+            <input type="radio" name="fussiness" value="2"> Severe <br> 
+            <input type="radio" name="fussiness" value="0"> None </div><br>
+
+            <div class = "column">Blood Pressure: <br>
+            <input type="radio" name="bloodpressure" value="1"> Mild <br> 
+            <input type="radio" name="bloodpressure" value="2"> Severe <br> 
+            <input type="radio" name="bloodpressure" value="0"> None </div><br>
+
+            <div class = "column">Heart Rate: <br>
+            <input type="radio" name="heartrate" value="1"> Mild <br> 
+            <input type="radio" name="heartrate" value="2"> Severe <br> 
+            <input type="radio" name="heartrate" value="0"> None </div><br>
+        </div>
+        <div class = "row">
+            <div class = "column">Aches/Pain: <br>
+            <input type="checkbox" name="ha" > Head <br> 
+            <input type="checkbox" name="aa" > Abdomen <br> 
+            <input type="checkbox" name="ca" > Chest <br>
+            <input type="checkbox" name="ta" > Throat <br> 
+            <input type="checkbox" name="la" > Lungs <br> 
+            <input type="checkbox" name="ea" > Extremities </div><br>
+            
+            <div class = "column">Tightness: <br>
+            <input type="checkbox" name="ht" > Head <br> 
+            <input type="checkbox" name="at" > Abdomen <br> 
+            <input type="checkbox" name="ct" > Chest <br>
+            <input type="checkbox" name="tt" > Throat <br> 
+            <input type="checkbox" name="lt" > Lungs <br> 
+            <input type="checkbox" name="et" > Extremities </div><br>
+
+            <div class = "column">Inflammation: <br>
+            <input type="checkbox" name="hi" > Head <br> 
+            <input type="checkbox" name="ai" > Abdomen <br> 
+            <input type="checkbox" name="ci" > Chest <br>
+            <input type="checkbox" name="ti" > Throat <br> 
+            <input type="checkbox" name="li" > Lungs <br> 
+            <input type="checkbox" name="ei" > Extremities </div><br>
+        </div>
+        <div class = "row">
+            <div class = "column">Redness: <br>
+            <input type="checkbox" name="hr" > Head <br> 
+            <input type="checkbox" name="ar" > Abdomen <br> 
+            <input type="checkbox" name="cr" > Chest <br>
+            <input type="checkbox" name="tr" > Throat <br> 
+            <input type="checkbox" name="lr" > Lungs <br> 
+            <input type="checkbox" name="er" > Extremities </div><br>
+            
+            <div class = "column">Soreness: <br>
+            <input type="checkbox" name="hs" > Head <br> 
+            <input type="checkbox" name="a_s" > Abdomen <br> 
+            <input type="checkbox" name="cs" > Chest <br>
+            <input type="checkbox" name="ts" > Throat <br> 
+            <input type="checkbox" name="ls" > Lungs <br> 
+            <input type="checkbox" name="es" > Extremities </div><br>
+
+            <div class = "column">Bloating: <br>
+            <input type="checkbox" name="hb" > Head <br> 
+            <input type="checkbox" name="ab" > Abdomen <br> 
+            <input type="checkbox" name="cb" > Chest <br>
+            <input type="checkbox" name="tb" > Throat <br> 
+            <input type="checkbox" name="lb" > Lungs <br> 
+            <input type="checkbox" name="eb" > Extremities </div><br>
+
+        </div>
+        <div class = "row">
+            <div class = "column">Congestion: <br>
+            <input type="checkbox" name="hc" > Head <br> 
+            <input type="checkbox" name="ac" > Abdomen <br> 
+            <input type="checkbox" name="cc" > Chest <br>
+            <input type="checkbox" name="tc" > Throat <br> 
+            <input type="checkbox" name="lc" > Lungs <br> 
+            <input type="checkbox" name="ec" > Extremities </div><br>
+            
+            <div class = "column">Sensitivity: <br>
+            <input type="checkbox" name="hy" > Head <br> 
+            <input type="checkbox" name="ay" > Abdomen <br> 
+            <input type="checkbox" name="cy" > Chest <br>
+            <input type="checkbox" name="ty" > Throat <br> 
+            <input type="checkbox" name="ly" > Lungs <br> 
+            <input type="checkbox" name="ey" > Extremities </div><br>
+
+        </div>
+        <input type="hidden" name="license_string" value="$">
+        <div id= "submitbutton"><input type="submit" value="Submit" id = "button1"></div><br>
+	</form>
+        
+	<iframe src="http://192.168.137.22:8081/" seamless="seamless"></iframe>
+  </body>
+
+</html>
